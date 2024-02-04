@@ -9,7 +9,7 @@ class ImageViewer extends StatelessWidget {
   final String imageUrl;
 ImageViewer({required this.imageUrl, required String url});
  String get url => this.url;
- @override
+@override
  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
