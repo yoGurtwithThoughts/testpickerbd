@@ -4,6 +4,7 @@ import 'package:supabase/supabase.dart';
 import 'package:testpickerbd/model/ImageModel.dart';
 import 'package:testpickerbd/model/SupabaseService.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:testpickerbd/page/mainpage.dart';
 
 
 void main() async{
@@ -17,8 +18,6 @@ void main() async{
 final supabase=Supabase.instance.client;
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
