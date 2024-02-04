@@ -16,7 +16,7 @@ class SupabaseService {
         );
 //final supabase=Supabase.instance.client;
   Future<List<ImageViewer>> fetchImages() async {
-    final response = await _supabaseClient.from('UserData').select().execute();
+    final response = await _supabaseClient.from('ImagesUsers').select().execute();
     if (response.error != null) {
       throw Exception(response.error?.message);
     }
